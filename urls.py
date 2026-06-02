@@ -1,7 +1,9 @@
-from django.urls import path
-from . import views
+from django.contrib import admin
+from django.urls import path, include
+from django.views.generic import TemplateView
 
 urlpatterns = [
-    path('chat/', views.chat_api, name='chat_api'),
-    path('submit-resignation/', views.submit_resignation, name='submit_resignation'),
+    path('admin/', admin.site.urls),
+    path('api/', include('chatbot.urls')),
+    path('', TemplateView.as_view(template_name='chatbot/index.html'), name='home'),
 ]

@@ -1,2 +1,17 @@
-# AI-HR-Assistant-Chatbot
-An intelligent HR Assistant chatbot built with Django simplifies the resignation process. Employees type “resign” to begin, and the chatbot guides them through a form. Submissions are securely stored and accessible to HR via an admin panel for easy management and processing.
+# HR Resignation Chatbot
+
+A Django-based HR chatbot that helps employees with resignation processes.
+
+## Features
+- AI-powered chat interface
+- Resignation form collection
+- Admin dashboard for HR team
+- SQLite database storage
+
+## Setup
+1. Clone repo
+2. python -m venv venv
+3. source venv/bin/activate
+4. pip install -r requirements.txt
+5. python manage.py migrate
+6. python manage.py runserver
